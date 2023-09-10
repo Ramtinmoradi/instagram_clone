@@ -2,6 +2,7 @@
 
 import 'package:flutter/material.dart';
 import 'package:instagram_app/screens/main_screen.dart';
+import 'package:instagram_app/screens/splash_screen.dart';
 
 void main() {
   runApp(Application());
@@ -37,7 +38,7 @@ class Application extends StatelessWidget {
         ),
       ),
       debugShowCheckedModeBanner: false,
-      home: MainScreen(),
+      home: SplashScreen(),
     );
   }
 }

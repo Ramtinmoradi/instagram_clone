@@ -208,7 +208,7 @@ class HomeScreen extends StatelessWidget {
               mainAxisSize: MainAxisSize.min,
               children: [
                 Text(
-                  'amirahmadadibii',
+                  'ramtinmoradiii',
                   style: TextStyle(
                     fontFamily: 'GB',
                     color: Colors.white,
@@ -248,7 +248,7 @@ class HomeScreen extends StatelessWidget {
         child: Container(
           height: 38.0,
           width: 38.0,
-          child: Image.asset('images/profile.png'),
+          child: Image.asset('images/me.png'),
         ),
       ),
     );
@@ -273,13 +273,13 @@ class HomeScreen extends StatelessWidget {
               child: Container(
                 height: 58.0,
                 width: 58.0,
-                child: Image.asset('images/profile.png'),
+                child: Image.asset('images/me.png'),
               ),
             ),
           ),
           SizedBox(height: 10.0),
           Text(
-            'data',
+            'ramtinmoradiii',
             style: TextStyle(
               fontFamily: 'GS',
               fontSize: 10.0,

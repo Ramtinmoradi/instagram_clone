@@ -97,7 +97,7 @@ class PostScreen extends StatelessWidget {
 
   Widget _getBottomScreen() {
     return Container(
-      height: 83.0,
+      height: 100.0,
       width: double.infinity,
       decoration: BoxDecoration(
         color: Color(0xff272B40),

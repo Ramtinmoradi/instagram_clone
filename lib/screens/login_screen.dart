@@ -1,6 +1,7 @@
 // ignore_for_file: deprecated_member_use
 
 import 'package:flutter/material.dart';
+import 'package:instagram_app/screens/switch_account.dart';
 
 class LoginScreen extends StatefulWidget {
   const LoginScreen({super.key});
@@ -193,7 +194,15 @@ class _LoginScreenState extends State<LoginScreen> {
           ),
           SizedBox(height: 32.0),
           ElevatedButton(
-            onPressed: () {},
+            onPressed: () {
+              Navigator.of(context).push(
+                MaterialPageRoute(
+                  builder: (context) {
+                    return SwitchAcountScreen();
+                  },
+                ),
+              );
+            },
             child: Text('Sign in'),
           ),
           SizedBox(height: 50.0),

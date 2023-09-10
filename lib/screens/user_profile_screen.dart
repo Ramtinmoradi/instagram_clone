@@ -163,7 +163,7 @@ class UserProfileScreen extends StatelessWidget {
           crossAxisAlignment: CrossAxisAlignment.start,
           children: [
             Text(
-              'امیراحمد برنامه نویس موبایل',
+              'رامتین مرادی برنامه نویس موبایل',
               style: TextStyle(
                 fontFamily: 'SM',
                 fontSize: 12,
@@ -172,7 +172,7 @@ class UserProfileScreen extends StatelessWidget {
             ),
             SizedBox(height: 5),
             Text(
-              'amirahmadadibii',
+              'ramtinmoradiii',
               style: TextStyle(
                 fontFamily: 'GB',
                 fontSize: 12,
@@ -206,7 +206,7 @@ class UserProfileScreen extends StatelessWidget {
           ),
           child: FittedBox(
             fit: BoxFit.cover,
-            child: Image.asset('images/profile.png'),
+            child: Image.asset('images/me.png'),
           ),
         ),
       ),

@@ -86,7 +86,7 @@ class _MainScreenState extends State<MainScreen> {
                       ),
                       child: FittedBox(
                         fit: BoxFit.cover,
-                        child: Image.asset('images/profile.png'),
+                        child: Image.asset('images/me.png'),
                       ),
                     ),
                   ),
@@ -111,7 +111,7 @@ class _MainScreenState extends State<MainScreen> {
                       ),
                       child: FittedBox(
                         fit: BoxFit.cover,
-                        child: Image.asset('images/profile.png'),
+                        child: Image.asset('images/me.png'),
                       ),
                     ),
                   ),

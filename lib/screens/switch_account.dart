@@ -3,6 +3,8 @@
 import 'dart:ui';
 
 import 'package:flutter/material.dart';
+import 'package:instagram_app/screens/home_screen.dart';
+import 'package:instagram_app/screens/main_screen.dart';
 
 class SwitchAcountScreen extends StatelessWidget {
   const SwitchAcountScreen({super.key});
@@ -41,9 +43,12 @@ class SwitchAcountScreen extends StatelessWidget {
                 ),
               ),
               Positioned(
-                top: 287.0,
-                left: 44.0,
+                top: 260.0,
+                // left: 44.0,
                 child: ClipRRect(
+                  borderRadius: BorderRadius.all(
+                    Radius.circular(15),
+                  ),
                   child: BackdropFilter(
                     filter: ImageFilter.blur(
                       sigmaX: 10.0,
@@ -51,7 +56,7 @@ class SwitchAcountScreen extends StatelessWidget {
                     ),
                     child: Container(
                       width: 340.0,
-                      height: 352.0,
+                      height: 360.0,
                       decoration: BoxDecoration(
                         gradient: LinearGradient(
                           begin: Alignment.topLeft,
@@ -61,23 +66,36 @@ class SwitchAcountScreen extends StatelessWidget {
                             Color.fromRGBO(255, 255, 255, 0.3),
                           ],
                         ),
-                        borderRadius: BorderRadius.circular(15.0),
+                        borderRadius: BorderRadius.all(
+                          Radius.circular(15),
+                        ),
                       ),
                       child: Column(
                         children: [
                           SizedBox(height: 32.0),
                           Image(
-                            image: AssetImage('images/profile.png'),
+                            width: 100,
+                            height: 100,
+                            filterQuality: FilterQuality.high,
+                            image: AssetImage('images/me.png'),
                           ),
                           SizedBox(height: 20.0),
                           Text(
-                            'Amirahmadadibii',
+                            'Ramtinmoradiii',
                             style: Theme.of(context).textTheme.headline4,
                           ),
                           SizedBox(height: 20.0),
                           ElevatedButton(
                             style: Theme.of(context).elevatedButtonTheme.style,
-                            onPressed: () {},
+                            onPressed: () {
+                              Navigator.of(context).push(
+                                MaterialPageRoute(
+                                  builder: (context) {
+                                    return MainScreen();
+                                  },
+                                ),
+                              );
+                            },
                             child: Text(
                               'Confirm',
                             ),
@@ -109,7 +127,7 @@ class SwitchAcountScreen extends StatelessWidget {
                 "don't have an account? / ",
                 style: TextStyle(
                   color: Colors.grey,
-                  fontSize: 20.0,
+                  fontSize: 16.0,
                   fontFamily: 'GB',
                 ),
               ),
@@ -117,7 +135,7 @@ class SwitchAcountScreen extends StatelessWidget {
                 'Sign up',
                 style: TextStyle(
                   color: Colors.white,
-                  fontSize: 20.0,
+                  fontSize: 18.0,
                   fontFamily: 'GB',
                 ),
               ),
